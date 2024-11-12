@@ -34,7 +34,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    let frameId;
+    let frameId: number;
     const updateFrame = () => {
       requestAnimationFrame(updateFrame);
       setData((prevData: any) => ({ ...prevData })); // Force re-render
